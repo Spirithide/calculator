@@ -24,7 +24,7 @@ Future<void> main() async {
   DatabaseHelper databaseHelper = DatabaseHelper();
   databaseHelper.initializeDatabase();
   await FirebaseAuth.instance.signInAnonymously();
-  WidgetsFlutterBinding.ensureInitialized();
+  
   return runApp(new MyApp());
 }
 
